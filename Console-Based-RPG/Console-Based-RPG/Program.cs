@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace TextBasedRPG
 {
@@ -33,7 +34,58 @@ namespace TextBasedRPG
             int bossMonsterUltimateAttackDamage = 300;
             bool isBossMonsterAlive = true;
 
-            // Game introduction and Player Input
+            // For Player Choice
+            string initialChoice;
+            string PlayerChoice;
+
+
+            // Game introduction and Player Input           
+            try
+            {
+                Console.WriteLine("Welcome To the Adventure Legend!");
+                Console.WriteLine("====================================");
+                Console.WriteLine("1. Start the Game {0}2. Exit", Environment.NewLine);
+                Console.Write("Enter your choice: ");
+                initialChoice = Console.ReadLine();
+                int intInitialChoice = int.Parse(initialChoice);
+                if (intInitialChoice == 1)
+                {
+                    bool isValid = false;
+                    do
+                    {
+                        
+
+                        Console.Write("Please enter your character name: ");
+                        playerName = Console.ReadLine();
+
+                        if (Regex.IsMatch(playerName, @"^[a-zA-Z]+$"))
+                        {
+                            isValid = true;
+                            Console.WriteLine($"Welcome Legend {playerName}, your journey has begun! ");
+
+                        } else
+                        {
+                            Console.WriteLine("Invalid Character Name! Please use only letters(a to z, A to Z).");
+                        }
+                    } while (!(isValid));
+
+                }
+                else if (intInitialChoice == 2)
+                {
+                    Console.WriteLine("Bye.. See ya later!");
+                } else
+                {
+                    Console.WriteLine("Invalid Choice!");
+                }
+            } catch(Exception ex)
+            {
+                Console.WriteLine("Invalid Choice.");
+            } finally
+            {
+                Console.WriteLine("Program End.");
+            }
+
+            
 
         }
 
