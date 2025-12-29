@@ -18,6 +18,7 @@ namespace TextBasedRPG
             int playerManaCostPerMagicAttack = 10;
             int playerManaCostPerUlitmateAttack = 30;
             int playerManaCostPerDefend = 5;
+            int playerManaCostRunOneTime = 3;
             bool isPlayerAlive = true;
 
             // For Normal Monster
@@ -47,7 +48,7 @@ namespace TextBasedRPG
             string PlayerChoice;
 
             // Others
-            int turn = 0;
+            
 
 
             // Game introduction and Player Input           
@@ -81,57 +82,133 @@ namespace TextBasedRPG
                             Console.WriteLine("Ohh {0}! You see the monster called {1}. What would you do?",playerName, monsterName);
 
                             while(isPlayerAlive && isMonsterAlive)
-                            {
-                                // We will make simple game logic, player turn is even number and monster is odd.
-                                Console.WriteLine(" 1. Attack {0} 2. Defend {0} 3. Magic Attack {0} 4. Ultimate",Environment.NewLine);
-                                Console.WriteLine("Enter your choice (default is 1): ");
-                                if(turn % 2 == 0)
+                            { 
+                              
+                               for(int i = 0; i < 100; i++)
                                 {
                                     
-                                    PlayerChoice = Console.ReadLine();
-                                    switch (PlayerChoice)
+                                    if (i % 2 == 0)
                                     {
-                                        case "1":
-                                            Console.WriteLine($"You attack the {monsterName} with physical attack!");
-                                            monsterHealth -= playerPhysicalAttackDamage;
-                                            playerMana -= playerManaCostPerPhysicalAttack;
-                                            break;
+                                        // We will make simple game logic, player turn is even number and monster is odd.
+                                        Console.WriteLine(" 1. Attack {0} 2. Magic Attack {0} 3. Ultimate", Environment.NewLine);
+                                        Console.Write("Enter your choice (default is 1): ");
+                                        // If turn is even number, player turns to attack
 
-                                        case "2":
-                                            Console.WriteLine($"You defend from the {monsterName}'s attack! No monster damage is effected.");
-                                            playerMana -= playerManaCostPerDefend;
-                                            break;
+                                        PlayerChoice = Console.ReadLine();
+                                        switch (PlayerChoice)
+                                        {
+                                            case "1":
+                                                Console.WriteLine($"You attack the {monsterName} with physical attack!");
+                                                monsterHealth -= playerPhysicalAttackDamage;
+                                                playerMana -= playerManaCostPerPhysicalAttack;
+                                                break;
 
-                                        case "3":
-                                            Console.WriteLine($"You attack the {monsterName} with magic attack!");
-                                            monsterHealth -= playerMagicDamage;
-                                            playerMana -= playerManaCostPerMagicAttack;
-                                            break;
 
-                                        case "4":
-                                            Console.WriteLine($"You attack the {monsterName} with your ultimate attack!!");
-                                            monsterHealth -= playerUltimateDamage;
-                                            playerMana -= playerManaCostPerUlitmateAttack;
-                                            break;
+                                            case "2":
+                                                Console.WriteLine($"You attack the {monsterName} with magic attack!");
+                                                monsterHealth -= playerMagicDamage;
+                                                playerMana -= playerManaCostPerMagicAttack;
+                                                break;
 
-                                        default:
-                                            Console.WriteLine($"You attack the {monsterName} with physical attack!");
-                                            monsterHealth -= playerPhysicalAttackDamage;
-                                            playerMana -= playerManaCostPerPhysicalAttack;
-                                            break;
+                                            case "3":
+                                                Console.WriteLine($"You attack the {monsterName} with your ultimate attack!!");
+                                                monsterHealth -= playerUltimateDamage;
+                                                playerMana -= playerManaCostPerUlitmateAttack;
+                                                break;
+
+                                            default:
+                                                Console.WriteLine($"You attack the {monsterName} with physical attack!");
+                                                monsterHealth -= playerPhysicalAttackDamage;
+                                                playerMana -= playerManaCostPerPhysicalAttack;
+                                                break;
+                                        }
+
+                                        if (monsterHealth <= 0)
+                                        {
+                                            Console.WriteLine($"{monsterName} is died. You win.");
+                                            isMonsterAlive = false;
+                                        }
+                                        else if (playerHealth <= 0)
+                                        {
+                                            Console.WriteLine($"You have been killed by {monsterName}. Game Over!");
+                                            isPlayerAlive = false;
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine(" Player Health : {0} {3} Player Mana : {1} {3} Monster Health : {2}", playerHealth, playerMana, monsterHealth, Environment.NewLine);
+                                        }
+
                                     }
-                                    
-                                    if(monsterHealth <= 0)
+                                    else if (i % 2 == 1) // If turn is odd , monster turns to attack
                                     {
-                                        Console.WriteLine($"{monsterName} is died. You win.");
-                                        isMonsterAlive = false;
-                                    } else if(playerHealth <= 0)
+
+                                        Console.WriteLine($"{monsterName} turns to attack. Monster is attacking you! What would you do?");
+                                        Console.WriteLine("You can only defend the half of the damage from magic attack and can run only from normal physical attack!");
+                                        Console.WriteLine($" 1. Defend {Environment.NewLine} 2. Run{Environment.NewLine}");
+                                        Console.Write("Enter your action: ");
+                                        PlayerChoice = Console.ReadLine();
+                                        switch (PlayerChoice)
+                                        {
+                                            case "1":
+                                                if (playerMana < 5)
+                                                {
+                                                    Console.WriteLine("Not enough Mana to perform this action!");
+                                                }
+                                                else
+                                                {
+                                                    Console.WriteLine("You defend the monster attack! No normal monster physical attack is effected.");
+                                                    playerMana -= playerManaCostPerDefend;
+                                                }
+                                                break;
+
+                                            case "2":
+                                                if (playerMana < 3)
+                                                {
+                                                    Console.WriteLine("Not enough Mana to perform this action!");
+                                                }
+                                                else
+                                                {
+                                                    Console.WriteLine("You run from the monster attack! No normal monster physical attack is effected.");
+                                                    playerMana -= playerManaCostRunOneTime;
+                                                }
+                                                break;
+
+                                            default:
+                                                if (playerMana < 5)
+                                                {
+                                                    Console.WriteLine("Not enough Mana to perform this action!");
+                                                }
+                                                else
+                                                {
+                                                    Console.WriteLine("You defend the monster attack! No normal monster physical attack is effected.");
+                                                    playerMana -= playerManaCostPerDefend;
+                                                }
+                                                break;
+                                        }
+
+                                        if (monsterHealth <= 0)
+                                        {
+                                            Console.WriteLine($"{monsterName} is died. You win.");
+                                            isMonsterAlive = false;
+                                        }
+                                        else if (playerHealth <= 0)
+                                        {
+                                            Console.WriteLine($"You have been killed by {monsterName}. Game Over!");
+                                            isPlayerAlive = false;
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine(" Player Health : {0} {3} Player Mana : {1} {3} Monster Health : {2}", playerHealth, playerMana, monsterHealth, Environment.NewLine);
+                                        }
+                                    }
+                                    else
                                     {
-                                        Console.WriteLine($"You have been killed by {monsterName}. Game Over!");
-                                        isPlayerAlive = false;
-                                    } else
+                                        Console.WriteLine("Unexpected Error Occurred!");
+                                    }
+
+                                    if (monsterHealth <= 0 || isMonsterAlive == false || playerHealth <= 0 || isPlayerAlive == false)
                                     {
-                                        Console.WriteLine(" Player Health : {0} {3} Player Mana : {1} {3} Monster Health : {2}", playerHealth, playerMana, monsterHealth, Environment.NewLine);
+                                        i = 100;
                                     }
                                 }
                             }
