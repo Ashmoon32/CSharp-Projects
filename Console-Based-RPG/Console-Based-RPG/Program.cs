@@ -153,6 +153,7 @@ namespace TextBasedRPG
                                                 if (playerMana < 5)
                                                 {
                                                     Console.WriteLine("Not enough Mana to perform this action!");
+                                                    playerHealth -= monsterAttackDamage;
                                                 }
                                                 else
                                                 {
@@ -165,6 +166,7 @@ namespace TextBasedRPG
                                                 if (playerMana < 3)
                                                 {
                                                     Console.WriteLine("Not enough Mana to perform this action!");
+                                                    playerHealth -= monsterAttackDamage;
                                                 }
                                                 else
                                                 {
@@ -177,6 +179,7 @@ namespace TextBasedRPG
                                                 if (playerMana < 5)
                                                 {
                                                     Console.WriteLine("Not enough Mana to perform this action!");
+                                                    playerHealth -= monsterAttackDamage;
                                                 }
                                                 else
                                                 {
