@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="Ch-1/Ch-1.csproj" />
-  <Project Path="exe2/exe2.csproj" />
+  <Project Path="Ch-1/Ch-1.csproj" Id="0b4e1fa5-7ddc-4a7f-badb-42a7bf2c19f6" />
+  <Project Path="exe2/exe2.csproj" Id="3b72b86d-37dc-4e6d-ae19-192787ffb29d" />
 </Solution>

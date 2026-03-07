@@ -11,8 +11,9 @@ namespace Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Exercise-1:");
             exe1.Run();
+            exe3.Run();
+            Class1.Run();
         }
     }
 }
