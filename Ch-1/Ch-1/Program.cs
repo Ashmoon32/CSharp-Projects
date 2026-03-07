@@ -14,6 +14,8 @@ namespace Main
             exe1.Run();
             exe3.Run();
             Class1.Run();
+            Class2.Run();
+            Class3.Run();
         }
     }
 }

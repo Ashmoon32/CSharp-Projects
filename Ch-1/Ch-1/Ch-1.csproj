@@ -59,6 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class3.cs" />
     <Compile Include="exe1.cs" />
     <Compile Include="exe3.cs" />
     <Compile Include="Program.cs" />
