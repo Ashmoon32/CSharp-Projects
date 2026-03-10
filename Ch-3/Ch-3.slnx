@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="Ch-3/Ch-3.csproj" />
+  <Project Path="ch3-eg3.13/ch3-eg3.13.csproj" Id="d0c77638-77f6-4d4b-8a58-6517a4cc5f44" />
   <Project Path="ch3-eg3.7/ch3-eg3.7.csproj" Id="8307aa00-e244-4d66-8ae2-bef9b95c7b06" />
+  <Project Path="eg3.15/eg3.15.csproj" Id="e95ab638-1d62-42a7-bde3-d20acd2fbd4d" />
 </Solution>
