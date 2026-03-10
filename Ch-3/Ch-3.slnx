@@ -10,4 +10,5 @@
   <Project Path="ex4/ex4.csproj" Id="6fc19e41-a91a-4c18-bb1f-50d7bfc042cf" />
   <Project Path="ex5/ex5.csproj" Id="abd2db47-6eb8-48c3-ab91-17c3be6fd770" />
   <Project Path="ex6/ex6.csproj" Id="11acf20d-b2e3-4a2c-874a-c9f15e53d647" />
+  <Project Path="ex7/ex7.csproj" Id="f64dc81b-885a-4c27-8003-4929cf5e6dc8" />
 </Solution>
