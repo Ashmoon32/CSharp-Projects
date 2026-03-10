@@ -8,7 +8,7 @@ class Program
         double amount = double.Parse(Console.ReadLine());
         double discount;
 
-        if(amount >= 5000)
+        if (amount >= 5000)
         {
             discount = amount * 0.20;
         } else if (amount >= 3000 && amount < 5000)

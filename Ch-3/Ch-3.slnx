@@ -8,4 +8,5 @@
   <Project Path="ex2/ex2.csproj" Id="74782b8f-5599-4a4a-b98f-8ce038765171" />
   <Project Path="ex3/ex3.csproj" Id="29edf301-4f60-49b9-84e3-f608349ed648" />
   <Project Path="ex4/ex4.csproj" Id="6fc19e41-a91a-4c18-bb1f-50d7bfc042cf" />
+  <Project Path="ex5/ex5.csproj" Id="abd2db47-6eb8-48c3-ab91-17c3be6fd770" />
 </Solution>
