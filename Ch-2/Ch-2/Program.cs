@@ -47,6 +47,36 @@ class Program
         Console.WriteLine("Current Day: " + now.Day);
         Console.WriteLine("Current Hour:Minute:Second :: " + now.Hour + ":" + now.Minute + ":" + now.Second);
 
+        DateTime Now = DateTime.Now;
+        Console.WriteLine(Now);
+
+        DateTime Today = DateTime.Today;
+        Console.WriteLine(Today);
+
+        DateTime Future = Today.AddDays(7);
+        Console.WriteLine("On that day, you will have presentation :" + Future.ToString("dd/MM/yyyy"));
+        Console.WriteLine(now.ToString("yyyy-MM-dd"));
+        Console.WriteLine(now.ToString("dd:MM:yyyy"));
+
+        int Num1 = 2;
+        int NumMinus = -2;
+        float Num2 = 3.2f;
+        float Num3 = 3.6f;
+        long Num4 = 555555L;
+        double Num5 = 3.3333333D;
+        Console.WriteLine(Math.Sqrt(Num5));
+        Console.WriteLine(Math.Abs(NumMinus));
+        Console.WriteLine(Math.Max(Num1, Num4));
+        Console.WriteLine(Math.Min(NumMinus, Num5));
+        Console.WriteLine(Math.Round(Num2));
+        Console.WriteLine(Math.Round(Num3));
+        Console.WriteLine(Math.Floor(Num2));
+        Console.WriteLine(Math.Ceiling(Num2));
+
         
+
+
+
+
     }
 }
