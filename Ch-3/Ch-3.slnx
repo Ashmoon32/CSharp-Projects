@@ -5,4 +5,5 @@
   <Project Path="eg3.15/eg3.15.csproj" Id="e95ab638-1d62-42a7-bde3-d20acd2fbd4d" />
   <Project Path="eg3.17/eg3.17.csproj" Id="1a3dbcc3-0f14-4247-bae3-17a3bf126e3d" />
   <Project Path="ex1/ex1.csproj" Id="58841819-a0a0-4bc6-be5c-a3cabe0e6757" />
+  <Project Path="ex2/ex2.csproj" Id="74782b8f-5599-4a4a-b98f-8ce038765171" />
 </Solution>
