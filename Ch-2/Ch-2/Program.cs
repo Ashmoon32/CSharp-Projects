@@ -26,7 +26,7 @@ class Program
 
         Console.WriteLine();
 
-        long l = 123345L;
+        long l = 1234567891011121314L;
         byte b = 123;
         Console.WriteLine("Long: " + l);
         Console.WriteLine("Byte: " + b);
@@ -41,5 +41,12 @@ class Program
         Console.WriteLine("Remainder: " + (A % B));
 
 
+        DateTime now = DateTime.Now;
+        Console.WriteLine("Current Year: " + now.Year);
+        Console.WriteLine("Current Month: " + now.Month);
+        Console.WriteLine("Current Day: " + now.Day);
+        Console.WriteLine("Current Hour:Minute:Second :: " + now.Hour + ":" + now.Minute + ":" + now.Second);
+
+        
     }
 }
