@@ -83,5 +83,23 @@ class Program
         Console.WriteLine("I AND J : " + (I && J));
         Console.WriteLine("I OR J : " + (I || J));
         Console.WriteLine("NOT I: " + (!I));
+
+        int x = 5;
+
+        Console.WriteLine("Initial value of x: " + x);
+        x += 3;
+        Console.WriteLine("After ( x += 3): " + x);
+
+        x *= 2;
+        Console.WriteLine("After ( x *= 2): " + x);
+
+        int y = 10;
+        Console.WriteLine("Initial value of y: " + y);
+
+        Console.WriteLine("Post-increment (y++): " + y++);
+        Console.WriteLine("Value of y after post-increment: " + y);
+
+        Console.WriteLine("Pre-decrement (--y): " + --y);
+        Console.WriteLine("Value of y after pre-decrement: " + y);
     }
 }
