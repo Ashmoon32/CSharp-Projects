@@ -1,5 +1,11 @@
 ﻿using System;
 
+struct Employee
+{
+    public int ID;
+    public string Name;
+    public double Salary;
+}
 class Program
 {
     static void Main(string[] args)
@@ -15,5 +21,15 @@ class Program
         Console.WriteLine("Marks Percentage: " + marksPercentage + "%");
         Console.WriteLine("Grade: " + grade);
         Console.WriteLine("Enrolled: " + isEnrolled);
+
+        Employee emp;
+        emp.ID = 1;
+        emp.Name = "La Min Kyal Sin";
+        emp.Salary = 500000.00;
+
+        Console.WriteLine("Employee ID: " + emp.ID);
+        Console.WriteLine("Employee Name: " + emp.Name);
+        Console.WriteLine("Employee Salary: $" + emp.Salary);
+
     }
 }
