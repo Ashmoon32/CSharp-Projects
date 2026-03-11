@@ -101,5 +101,13 @@ class Program
 
         Console.WriteLine("Pre-decrement (--y): " + --y);
         Console.WriteLine("Value of y after pre-decrement: " + y);
+
+        Console.Write("Enter radius of a circle: ");
+        int r = int.Parse(Console.ReadLine());
+        double perimeter = 2 * (Math.PI * r);
+        double area = Math.PI * r * r;
+        Console.WriteLine("The perimeter of the circle: " + perimeter);
+        Console.WriteLine("The area of the circle: " + area);
+
     }
 }
