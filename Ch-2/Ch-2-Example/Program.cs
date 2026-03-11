@@ -6,6 +6,13 @@ struct Employee
     public string Name;
     public double Salary;
 }
+
+class Student
+{
+    public string Name;
+    public int Age;
+
+}
 class Program
 {
     static void Main(string[] args)
@@ -31,5 +38,27 @@ class Program
         Console.WriteLine("Employee Name: " + emp.Name);
         Console.WriteLine("Employee Salary: $" + emp.Salary);
 
+        Student s1 = new Student();
+
+        s1.Name = "Kyal Sin La Min";
+        s1.Age = 20;
+
+        Console.WriteLine("Student Name: " + s1.Name);
+        Console.WriteLine("Student Age: " + s1.Age);
+
+        Student[] students = new Student[2];
+
+        students[0] = new Student();
+        students[0].Name = "Kyal Sin";
+        students[0].Age = 19;
+
+        students[1] = new Student();
+        students[1].Name = "La Min";
+        students[1].Age = 21;
+
+        foreach (Student s in students)
+        {
+            Console.WriteLine("Name: " + s.Name + ", Age: " + s.Age);
+        }
     }
 }
