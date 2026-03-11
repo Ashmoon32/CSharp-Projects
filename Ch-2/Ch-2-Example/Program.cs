@@ -60,5 +60,12 @@ class Program
         {
             Console.WriteLine("Name: " + s.Name + ", Age: " + s.Age);
         }
+
+
+        int? AGE = null;
+        bool? isGraduated = null;
+
+        Console.WriteLine("Age: " + (AGE.HasValue ? AGE.ToString() : "No value"));
+        Console.WriteLine("Graduated: " + (isGraduated.HasValue ? isGraduated.ToString() : "No value"));
     }
 }
