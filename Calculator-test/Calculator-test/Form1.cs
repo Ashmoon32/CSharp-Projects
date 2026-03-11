@@ -41,11 +41,16 @@ namespace Calculator_test
 
         private void button_clearEntry_click(object sender, EventArgs e)
         {
-            if(currentCalculation.Length > 0)
+            if (currentCalculation.Length > 0)
             {
                 currentCalculation = currentCalculation.Remove(currentCalculation.Length - 1, 1);
             }
-            txtOutput.Text = currentCalculation;    
+            txtOutput.Text = currentCalculation;
+        }
+
+        private void txtOutput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -280,11 +280,12 @@
             // 
             // txtOutput
             // 
-            txtOutput.Font = new Font("Segoe UI", 15.75F);
+            txtOutput.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtOutput.Location = new Point(33, 72);
             txtOutput.Name = "txtOutput";
-            txtOutput.Size = new Size(340, 35);
+            txtOutput.Size = new Size(340, 39);
             txtOutput.TabIndex = 20;
+            txtOutput.TextChanged += txtOutput_TextChanged;
             // 
             // Form1
             // 
