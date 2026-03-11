@@ -67,5 +67,21 @@ class Program
 
         Console.WriteLine("Age: " + (AGE.HasValue ? AGE.ToString() : "No value"));
         Console.WriteLine("Graduated: " + (isGraduated.HasValue ? isGraduated.ToString() : "No value"));
+
+        float a = 3, b = 10;
+
+        Console.WriteLine("Addition: " + (a + b));
+        Console.WriteLine("Subtraction: " + (a - b));
+        Console.WriteLine("Multiplication: " + (a * b));
+        Console.WriteLine("Division: " + (a / b));
+        Console.WriteLine("Remainder: " + (a % b));
+
+        Console.WriteLine("Is a greater than b? " + (a > b));
+        Console.WriteLine("Is a equal to b? " + (a == b));
+
+        bool I = true, J = false;
+        Console.WriteLine("I AND J : " + (I && J));
+        Console.WriteLine("I OR J : " + (I || J));
+        Console.WriteLine("NOT I: " + (!I));
     }
 }
