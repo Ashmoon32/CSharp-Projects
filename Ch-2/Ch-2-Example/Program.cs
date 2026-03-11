@@ -109,5 +109,32 @@ class Program
         Console.WriteLine("The perimeter of the circle: " + perimeter);
         Console.WriteLine("The area of the circle: " + area);
 
+        string name, address, phoneNo, faxNo, web;
+        string ManagerName, surname, ManagerphNo;
+        Console.WriteLine("For Company, ");
+        Console.Write("Enter name : ");
+        name = Console.ReadLine();
+        Console.Write("Enter address : ");
+        address = Console.ReadLine();
+        Console.Write("Enter phone number : ");
+        phoneNo = Console.ReadLine();
+        Console.Write("Enter fax : ");
+        faxNo = Console.ReadLine();
+        Console.Write("Enter web site : ");
+        web = Console.ReadLine();
+        Console.WriteLine("For Manager, ");
+        Console.Write("Enter Manager name : ");
+        ManagerName = Console.ReadLine();
+        Console.Write("Enter surename : ");
+        surname = Console.ReadLine();
+        Console.Write("Manager phone number : ");
+        ManagerphNo = Console.ReadLine();
+
+        Console.WriteLine(" Company Information ");
+        Console.WriteLine(name + '\n' + address + '\n' + phoneNo + '\n' + faxNo + '\n' + web);
+        Console.WriteLine(" Manager Information ");
+        Console.WriteLine(ManagerName + '\n' + surname + '\n' + ManagerphNo);
+
+
     }
 }
