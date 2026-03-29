@@ -53,9 +53,20 @@ class Program
         //Console.WriteLine("Age: " + (age.HasValue ? age.ToString() : "No value"));
         //Console.WriteLine("Graduated: " + (isGraduated.HasValue ? isGraduated.ToString() : "No value"));
 
-        bool a = true, b = false;
-        Console.WriteLine(" a AND b : " + (a && b));
-        Console.WriteLine(" a OR b : " + (a || b));
-        Console.WriteLine(" NOT a : " + !a);
+        //bool a = true, b = false;
+        //Console.WriteLine(" a AND b : " + (a && b));
+        //Console.WriteLine(" a OR b : " + (a || b));
+        //Console.WriteLine(" NOT a : " + !a);
+
+        Console.Write("Enter radius: ");
+        double radius = double.Parse(Console.ReadLine());
+
+        double Area = Math.PI * radius * radius;
+        double Perimeter = 2 * (Math.PI * radius);
+
+        Console.WriteLine("Area: " + Area);
+        Console.WriteLine("Perimeter: " + Perimeter);
+
+
     }
 }
