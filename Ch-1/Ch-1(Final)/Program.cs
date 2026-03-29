@@ -24,6 +24,27 @@ class Program
         Console.WriteLine("Today: " + Today.ToString("dddd, dd/MM/yyyy, HH:mm:ss"));
         Console.WriteLine("Yesterday: " + Today.AddDays(-1).ToString("dddd, dd/MM/yyyy, HH:mm:ss"));
 
+        double sqrt = Math.Sqrt(225);
+        double abs = Math.Abs(-1);
+        int min = Math.Min(10, 20);
+        Console.WriteLine(sqrt);
+        Console.WriteLine(abs);
+        Console.WriteLine(min);
+        Random rd = new Random();
+        int randomValue = rd.Next(1, 10);
+        Console.WriteLine(randomValue);
+        double deg = 120.1;
+        double rad = deg * Math.PI / 180;
+        Console.WriteLine($"Degree: {deg} is converted to Radian: {rad}.");
+        double radi = 3.1415;
+        double radToDeg = radi * 180 / Math.PI;
+        Console.WriteLine($"Radi: {radi} is converted to Deg: {radToDeg}.");
+
+        Console.Write("Enter your age: ");
+        int age = int.Parse(Console.ReadLine());
+        int newAge = age + 10;
+        Console.WriteLine("Your current age: " + age + ". Your age in next 10 year: " + newAge);
+
 
     }
 }
