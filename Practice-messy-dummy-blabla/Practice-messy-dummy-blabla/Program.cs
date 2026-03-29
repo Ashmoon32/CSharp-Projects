@@ -1,15 +1,54 @@
 ﻿using System;
 using System.IO;
-class Student
+//class Student
+//{
+//    public string Name;
+//    public int Age;
+//}
+
+class Person
 {
     public string Name;
-    public int Age;
+    public void DisplayName()
+    {
+        Console.WriteLine("Name: " + Name);
+    }
+}
+
+class Student : Person
+{
+    public string StudentID;
+
+    public void DisplayStudentID()
+    {
+        Console.WriteLine("Student ID: " + StudentID);
+    }
+}
+
+class Graduate : Student
+{
+    public string Degree;
+
+    public void DisplayDegree()
+    {
+        Console.WriteLine("Degree: " + Degree);
+    }
 }
 
 class Program
 {
     static void Main(string[] args)
     {
+
+
+        Graduate s1 = new Graduate();
+        s1.Name = "Murie";
+        s1.StudentID = "3GIT-1";
+        s1.Degree = "A.G.I.T Information Technology";
+
+        s1.DisplayName();
+        s1.DisplayStudentID();
+        s1.DisplayDegree();
 
         //Student s1 = new Student();
         //s1.Name = "Ashmoon";
@@ -99,23 +138,25 @@ class Program
         //}
         //Console.WriteLine("Sum = " + sum);
 
-        string path = "E:\\sample.txt";
+        //string path = "E:\\sample.txt";
 
-        StreamWriter write = new StreamWriter(path, true);
-        write.WriteLine("Welcome to C# file handling!");
-        write.WriteLine("This file is created using StreamWriter.");
-        write.WriteLine("I love you so much KSP");
-        write.Close();
+        //StreamWriter write = new StreamWriter(path, true);
+        //write.WriteLine("Welcome to C# file handling!");
+        //write.WriteLine("This file is created using StreamWriter.");
+        //write.WriteLine("I love you so much KSP");
+        //write.Close();
 
-        Console.WriteLine("File created and data written successfully!");
+        //Console.WriteLine("File created and data written successfully!");
 
-        Console.WriteLine(new String('-', 40));
+        //Console.WriteLine(new String('-', 40));
 
-        StreamReader read = new StreamReader(path);
-        string content = read.ReadToEnd();
-        read.Close();
+        //StreamReader read = new StreamReader(path);
+        //string content = read.ReadToEnd();
+        //read.Close();
 
-        Console.WriteLine("Content of the file:");
-        Console.WriteLine(content);
+        //Console.WriteLine("Content of the file:");
+        //Console.WriteLine(content);
+
+
     }
 }
