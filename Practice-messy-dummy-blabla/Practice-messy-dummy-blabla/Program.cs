@@ -45,12 +45,17 @@ class Program
         //    Console.WriteLine("Name : " + s.Name + ", Age : " + s.Age);
         //}
 
-        int? age = null;
-        bool? isGraduated = null;
+        //int? age = null;
+        //bool? isGraduated = null;
 
-        age = 21;
+        //age = 21;
 
-        Console.WriteLine("Age: " + (age.HasValue ? age.ToString() : "No value"));
-        Console.WriteLine("Graduated: " + (isGraduated.HasValue ? isGraduated.ToString() : "No value"));
+        //Console.WriteLine("Age: " + (age.HasValue ? age.ToString() : "No value"));
+        //Console.WriteLine("Graduated: " + (isGraduated.HasValue ? isGraduated.ToString() : "No value"));
+
+        bool a = true, b = false;
+        Console.WriteLine(" a AND b : " + (a && b));
+        Console.WriteLine(" a OR b : " + (a || b));
+        Console.WriteLine(" NOT a : " + !a);
     }
 }
