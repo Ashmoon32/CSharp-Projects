@@ -41,14 +41,14 @@ class Program
     {
 
 
-        Graduate s1 = new Graduate();
-        s1.Name = "Murie";
-        s1.StudentID = "3GIT-1";
-        s1.Degree = "A.G.I.T Information Technology";
+        //Graduate s1 = new Graduate();
+        //s1.Name = "Murie";
+        //s1.StudentID = "3GIT-1";
+        //s1.Degree = "A.G.I.T Information Technology";
 
-        s1.DisplayName();
-        s1.DisplayStudentID();
-        s1.DisplayDegree();
+        //s1.DisplayName();
+        //s1.DisplayStudentID();
+        //s1.DisplayDegree();
 
         //Student s1 = new Student();
         //s1.Name = "Ashmoon";
@@ -157,6 +157,15 @@ class Program
         //Console.WriteLine("Content of the file:");
         //Console.WriteLine(content);
 
+        string isUserDone = "";
+
+        do
+        {
+            Console.WriteLine("In do/while loop:");
+            Console.Write("Are you done? [yes] [no]: ");
+            isUserDone = Console.ReadLine();
+        } while (isUserDone.ToLower() != "yes");
+        Console.WriteLine("Program finished!");
 
     }
 }
