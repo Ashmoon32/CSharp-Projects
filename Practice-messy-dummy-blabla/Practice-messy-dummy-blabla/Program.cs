@@ -209,22 +209,41 @@ class Program
 
         //Console.WriteLine("Largest number is : " + largest);
 
-        Console.Write("Enter your mark :");
-        int Percentage = int.Parse(Console.ReadLine());
+        //Console.Write("Enter your mark :");
+        //int Percentage = int.Parse(Console.ReadLine());
 
-        if (Percentage >= 90)
-        {
-            Console.WriteLine("Excellent!");
-        } else if (Percentage >= 75)
-        {
-            Console.WriteLine("Good!");
-        } else if (Percentage >= 50)
-        {
-            Console.WriteLine("Average!");
-        } else
-        {
-            Console.WriteLine("Poor!");
-        }
+        //if (Percentage >= 90)
+        //{
+        //    Console.WriteLine("Excellent!");
+        //} else if (Percentage >= 75)
+        //{
+        //    Console.WriteLine("Good!");
+        //} else if (Percentage >= 50)
+        //{
+        //    Console.WriteLine("Average!");
+        //} else
+        //{
+        //    Console.WriteLine("Poor!");
+        //}
+
+        //Console.Write("Enter the total purchase amount(KS): ");
+        //double amount = double.Parse(Console.ReadLine());
+        //double discount;
+        
+        //if(amount >= 5000)
+        //{
+        //    discount = amount * 0.20;
+        //} else if(amount >= 3000 && amount < 5000)
+        //{
+        //    discount = amount * 0.10;
+        //} else
+        //{
+        //    discount = 0;
+        //}
+
+        //double finalAmount = amount - discount;
+        //Console.WriteLine("Discount: " + discount + "Ks");
+        //Console.WriteLine("Final amount to pay: " + finalAmount + "Ks");
     }
 
 }
