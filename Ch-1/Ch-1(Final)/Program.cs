@@ -45,6 +45,15 @@ class Program
         int newAge = age + 10;
         Console.WriteLine("Your current age: " + age + ". Your age in next 10 year: " + newAge);
 
+        int i = 212;
+        float f = 123.1F;
+        char c = 'A';
+        bool b = false;
+        Console.WriteLine(i);
+        Console.WriteLine(f);
+        Console.WriteLine(c);
+        Console.WriteLine(b);
+
 
     }
 }
