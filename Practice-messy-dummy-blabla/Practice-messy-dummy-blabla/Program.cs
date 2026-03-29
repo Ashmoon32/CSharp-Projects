@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.IO;
 class Student
 {
     public string Name;
@@ -88,16 +88,34 @@ class Program
 
         //Console.WriteLine("Sum = " + sum);
 
-        int sum = 0;
-        Console.Write("Enter the integer number n: ");
-        int n = int.Parse(Console.ReadLine());
-        for (int i = 0; i < n; i++)
-        {
-            Console.Write("Enter the number :" + (i + 1) + ": ");
-            int num = int.Parse(Console.ReadLine());
-            sum += num;
-        }
-        Console.WriteLine("Sum = " + sum);
+        //int sum = 0;
+        //Console.Write("Enter the integer number n: ");
+        //int n = int.Parse(Console.ReadLine());
+        //for (int i = 0; i < n; i++)
+        //{
+        //    Console.Write("Enter the number :" + (i + 1) + ": ");
+        //    int num = int.Parse(Console.ReadLine());
+        //    sum += num;
+        //}
+        //Console.WriteLine("Sum = " + sum);
 
+        string path = "E:\\sample.txt";
+
+        StreamWriter write = new StreamWriter(path, true);
+        write.WriteLine("Welcome to C# file handling!");
+        write.WriteLine("This file is created using StreamWriter.");
+        write.WriteLine("I love you so much KSP");
+        write.Close();
+
+        Console.WriteLine("File created and data written successfully!");
+
+        Console.WriteLine(new String('-', 40));
+
+        StreamReader read = new StreamReader(path);
+        string content = read.ReadToEnd();
+        read.Close();
+
+        Console.WriteLine("Content of the file:");
+        Console.WriteLine(content);
     }
 }
