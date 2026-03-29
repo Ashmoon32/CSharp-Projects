@@ -19,7 +19,7 @@ class Program
         //Console.WriteLine(Today.ToString(
         //    "dd-MM-yyyy"));
 
-        
+
         //Console.WriteLine("Tomorrow: " + Today.AddDays(1).ToString("dddd, dd/MM/yyyy, HH:mm:ss"));
         //Console.WriteLine("Today: " + Today.ToString("dddd, dd/MM/yyyy, HH:mm:ss"));
         //Console.WriteLine("Yesterday: " + Today.AddDays(-1).ToString("dddd, dd/MM/yyyy, HH:mm:ss"));
@@ -61,6 +61,20 @@ class Program
         //Console.WriteLine("Student Age: " + stu_age);
         //Console.WriteLine("Student Grade: " + stu_grade);
 
+        float radius = 3.2F;
+        double po = Math.PI * Math.Pow(radius, 2);
+        Console.WriteLine(po);
 
+        long l = 3223232L;
+        byte bt = 255;
+        Console.WriteLine(l);
+        Console.WriteLine(bt);
+
+        int a = 3; int b = 10;
+        Console.WriteLine("Addition: " + (a + b));
+        Console.WriteLine("Subtraction: " + (a - b));
+        Console.WriteLine("Multiplication: " + (a * b));
+        Console.WriteLine("Division: " + (a / b));
+        Console.WriteLine("Remainder: " + (a % b));
     }
 }
