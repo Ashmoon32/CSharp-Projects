@@ -58,15 +58,46 @@ class Program
         //Console.WriteLine(" a OR b : " + (a || b));
         //Console.WriteLine(" NOT a : " + !a);
 
-        Console.Write("Enter radius: ");
-        double radius = double.Parse(Console.ReadLine());
+        //Console.Write("Enter radius: ");
+        //double radius = double.Parse(Console.ReadLine());
 
-        double Area = Math.PI * radius * radius;
-        double Perimeter = 2 * (Math.PI * radius);
+        //double Area = Math.PI * radius * radius;
+        //double Perimeter = 2 * (Math.PI * radius);
 
-        Console.WriteLine("Area: " + Area);
-        Console.WriteLine("Perimeter: " + Perimeter);
+        //Console.WriteLine("Area: " + Area);
+        //Console.WriteLine("Perimeter: " + Perimeter);
 
+        // int count = 0;
+        //int sum = 0;
+
+        //while (count < 5)
+        //{
+        //    Console.Write("Enter integer " + (count + 1) + ": ");
+        //    string input = Console.ReadLine();
+
+        //    if (int.TryParse(input, out int number))
+        //    {
+        //        sum += number;
+        //        count++;
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Invalid number! Please enter a valid integer.");
+        //    }
+        //}
+
+        //Console.WriteLine("Sum = " + sum);
+
+        int sum = 0;
+        Console.Write("Enter the integer number n: ");
+        int n = int.Parse(Console.ReadLine());
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write("Enter the number :" + (i + 1) + ": ");
+            int num = int.Parse(Console.ReadLine());
+            sum += num;
+        }
+        Console.WriteLine("Sum = " + sum);
 
     }
 }
