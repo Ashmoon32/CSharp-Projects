@@ -179,5 +179,30 @@ class Program
         //    Console.WriteLine("You are not eligible to vote!");
         //}
 
+        Console.Write("Enter first number: ");
+        int num1 = int.Parse(Console.ReadLine());
+        Console.Write("Enter second number: ");
+        int num2 = int.Parse(Console.ReadLine());
+        Console.Write("Enter third numbe: ");
+        int num3 = int.Parse(Console.ReadLine());
+
+        if (num1 > num2)
+        {
+            if (num1 > num3)
+            {
+                Console.WriteLine($"First Number \'{num1}\' is Largest.");
+            }
+        } else
+        {
+            if(num2 > num3)
+            {
+                Console.WriteLine($"Second Number \'{num2}\' is Largest.");
+            } else
+            {
+                Console.WriteLine($"Third Number \'{num3}\' is Largest.");
+            }
+        }
+
+
     }
 }
