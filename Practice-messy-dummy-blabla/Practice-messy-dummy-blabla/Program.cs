@@ -215,10 +215,10 @@ class Program
         if (Percentage >= 90)
         {
             Console.WriteLine("Excellent!");
-        } else if (Percentage >= 75 && Percentage <= 89)
+        } else if (Percentage >= 75)
         {
             Console.WriteLine("Good!");
-        } else if (Percentage >= 50 && Percentage <= 74)
+        } else if (Percentage >= 50)
         {
             Console.WriteLine("Average!");
         } else
