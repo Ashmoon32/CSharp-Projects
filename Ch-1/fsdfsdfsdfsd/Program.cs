@@ -9,8 +9,15 @@ struct Employee
 
 class Program
 {
+    const double PI = 3.14159;
+    static readonly int version = 1;
     static void Main(string[] args)
     {
+
+        Console.WriteLine("PI = " + PI);
+        Console.WriteLine("version = " + version);
+
+        Console.WriteLine(new String('-', 40));
         Employee emp;
         emp.ID = 40;
         emp.Name = "MLPH";
@@ -37,5 +44,8 @@ class Program
         Console.WriteLine("Original String: " + numberString);
         Console.WriteLine("Convert using int.Parse(): " + val1);
         Console.WriteLine("Convert using Convert.ToInt32(): " + val2);
+
+        
+       
     }
 }
