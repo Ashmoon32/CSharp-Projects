@@ -157,15 +157,27 @@ class Program
         //Console.WriteLine("Content of the file:");
         //Console.WriteLine(content);
 
-        string isUserDone = "";
+        //string isUserDone = "";
 
-        do
-        {
-            Console.WriteLine("In do/while loop:");
-            Console.Write("Are you done? [yes] [no]: ");
-            isUserDone = Console.ReadLine();
-        } while (isUserDone.ToLower() != "yes");
-        Console.WriteLine("Program finished!");
+        //do
+        //{
+        //    Console.WriteLine("In do/while loop:");
+        //    Console.Write("Are you done? [yes] [no]: ");
+        //    isUserDone = Console.ReadLine();
+        //} while (isUserDone.ToLower() != "yes");
+        //Console.WriteLine("Program finished!");
+
+        //int age;
+        //Console.Write("Enter your age: ");
+        //age = int.Parse(Console.ReadLine());
+
+        //if ( age >= 18)
+        //{
+        //    Console.WriteLine("You are eligible to vote!");
+        //} else
+        //{
+        //    Console.WriteLine("You are not eligible to vote!");
+        //}
 
     }
 }
