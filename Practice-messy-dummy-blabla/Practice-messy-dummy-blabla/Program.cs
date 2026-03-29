@@ -229,7 +229,7 @@ class Program
         //Console.Write("Enter the total purchase amount(KS): ");
         //double amount = double.Parse(Console.ReadLine());
         //double discount;
-        
+
         //if(amount >= 5000)
         //{
         //    discount = amount * 0.20;
@@ -244,6 +244,31 @@ class Program
         //double finalAmount = amount - discount;
         //Console.WriteLine("Discount: " + discount + "Ks");
         //Console.WriteLine("Final amount to pay: " + finalAmount + "Ks");
-    }
 
+        //for (int i = 1; i <= 10; i++)
+        //{
+        //    double square = Math.Pow(i, 2);
+        //    Console.WriteLine($"Square of {i} is {square}");
+        //}
+
+        //Console.WriteLine("Squares of numbers from 1 to 10:");
+        //for (int i = 1; i <= 10; i++)
+        //{
+        //    int square = i * i;
+        //    Console.WriteLine("Number: " + i + ", Square: " + square);
+        //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 }
