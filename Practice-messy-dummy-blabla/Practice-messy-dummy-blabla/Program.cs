@@ -258,7 +258,14 @@ class Program
         //    Console.WriteLine("Number: " + i + ", Square: " + square);
         //}
 
-
+        int i = 1;
+        int sum = 0;
+        while(i <= 20)
+        {
+            sum += i;
+            i += 2;
+        }
+        Console.WriteLine("Sum of even number between 1 to 20: " + sum);
 
 
 
